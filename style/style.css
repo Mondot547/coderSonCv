@@ -1,6 +1,113 @@
+@import url(./color.css);
+
+
+/*universel*/
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
-    font-size: 62.5%;
+    margin: 0 auto;
+
+    max-width: 1160px;
+}
+
+
+/*header / entete de page*/
+header {
+    text-align: center;
+    background-color: var(--color-header);
+    color: var(--color-text-header);
+}
+
+.name>h1 {
+    margin: 2rem 0 2rem 0;
+}
+
+.name p {
+    font-size: 1.5rem;
+}
+
+.name .profil__img {
+    width: 110px;
+    height: 130px;
+    cursor: zoom-in;
+    border-radius: 50%;
+}
+
+address {
+    width: 100%;
+    background-color: var(--color-address);
+    margin-top: 20px;
+    height: 6rem;
+    text-align: initial;
+
+}
+
+address ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+address ul li {
+    width: 100%;
+    margin: 0 2rem 0 2rem;
+}
+
+.address__list--item__start {
+    text-align: start;
+}
+
+.address__list--item__middle {
+    text-align: center;
+}
+
+.address__list--item__end {
+    text-align: end;
+}
+
+address ul li a {
+    text-decoration: none;
+    color: var(--color-text-header);
+}
+
+/*corp du site*/
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container section {
+    width: 80%;
+    padding: 3rem;
+}
+
+.container aside {
+    width: 20%;
+    padding: 3rem 0;
+    background-color: var(--color-header);
+}
+
+.container aside p {
+    padding: 1rem;
+    text-indent: 1rem;
+    color: var(--color-text-header);
+}
+
+.container aside h2 {
+    padding-left: 1rem;
+    background-color: var(--color-bck-title);
+}
+
+/*Footer / pied de page*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    background-color: var(--color-header);
+    color: var(--color-text-header);
 }
