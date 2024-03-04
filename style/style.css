@@ -12,9 +12,17 @@
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: "Lato", sans-serif;
+}
+
+.first__experience {
+    margin-top: 2rem;
+}
+
+.first__experience p,
+.second__experience p {
+    font-weight: bold;
 }
 
 p,
@@ -96,28 +104,29 @@ address ul li a {
 }
 
 .container section article ul {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 2rem;
 }
 
 .container aside {
-    width: 25%;
+    width: 30%;
     padding: 3rem 2rem 3rem 0;
     background-color: var(--color-header);
+    color: var(--color-text-header);
 }
 
 .container aside p {
     padding: 1rem;
     text-indent: 1rem;
-    color: var(--color-text-header);
 }
 
 .container aside h2 {
     padding-left: 1rem;
     background-color: var(--color-bck-title);
+    color: var(--color-aside-title);
 }
 
 .container aside ul {
-    margin: 2rem 3rem;
+    margin: 2rem 2rem;
 }
 
 .container aside ul li p {
@@ -134,4 +143,17 @@ footer {
     height: 7rem;
     background-color: var(--color-header);
     color: var(--color-text-header);
+}
+
+.nav__icon .icon__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.icon__list .icon {
+    text-decoration: none;
+    color: #fff;
+
 }
