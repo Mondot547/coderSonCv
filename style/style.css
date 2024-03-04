@@ -149,7 +149,8 @@ aside {
 
 aside p {
     padding: 1rem;
-    text-indent: 1rem;
+    text-indent: 2rem;
+    text-align: justify;
 }
 
 aside h2 {
@@ -191,11 +192,11 @@ footer {
     transition: all ease-in 0.3s;
 }
 
-.icon[title="Linkedin"] {
-    color: var(--color-linkedin);
-
-}
 
 .icon__list .icon:hover {
     opacity: 0.5;
+}
+
+.maj__time {
+    margin-top: 1rem;
 }
