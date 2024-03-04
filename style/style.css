@@ -7,8 +7,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0 auto;
-
     max-width: 1160px;
+}
+
+section {
+    width: 100%;
 }
 
 h1,
@@ -16,13 +19,8 @@ h2 {
     font-family: "Lato", sans-serif;
 }
 
-.first__experience {
-    margin-top: 2rem;
-}
-
-.first__experience p,
-.second__experience p {
-    font-weight: bold;
+a:hover {
+    text-decoration: underline;
 }
 
 p,
@@ -50,6 +48,7 @@ header {
     height: 130px;
     cursor: zoom-in;
     border-radius: 50%;
+    filter: drop-shadow(0 0 1rem #000000)
 }
 
 address {
@@ -92,44 +91,78 @@ address ul li a {
 }
 
 /*corp du site*/
-.container {
+main {
     display: flex;
-    flex-direction: row-reverse;
-}
-
-.container section {
-    width: 75%;
-    padding: 3rem;
+    margin: 0;
     border-right: 2px solid var(--color-address);
 }
 
-.container section article ul {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    width: 100%;
+}
+
+.section__pro {
+    width: 100%;
+    padding: 1.5rem 2rem 2rem 2rem;
+}
+
+.section__pro h2 {
+    background-color: var(--color-bck-title);
+    padding-left: 1rem;
+    border-left: 7px solid var(--color-header);
+    margin: 0
+}
+
+.first__experience {
+    margin-top: 2rem;
+}
+
+.first__experience p,
+.second__experience p {
+    font-weight: bold;
+}
+
+.section__pro ul {
     margin: 2rem 2rem;
 }
 
-.container aside {
-    width: 30%;
-    padding: 3rem 2rem 3rem 0;
-    background-color: var(--color-header);
-    color: var(--color-text-header);
+.section__pro ul li {
+    border-right: 2px solid transparent;
 }
 
-.container aside p {
+.section__pro ul li:hover {
+    border-right: 2px solid var(--color-header);
+}
+
+aside {
+    width: 40%;
+    padding: 1.5rem 2rem 3rem 0;
+    background-color: var(--color-header);
+    color: var(--color-text-header);
+    margin: 0;
+}
+
+aside p {
     padding: 1rem;
     text-indent: 1rem;
 }
 
-.container aside h2 {
+aside h2 {
     padding-left: 1rem;
     background-color: var(--color-bck-title);
     color: var(--color-aside-title);
 }
 
-.container aside ul {
+aside ul {
     margin: 2rem 2rem;
 }
 
-.container aside ul li p {
+aside ul li p {
     padding: 0;
 }
 
@@ -155,5 +188,14 @@ footer {
 .icon__list .icon {
     text-decoration: none;
     color: #fff;
+    transition: all ease-in 0.3s;
+}
 
+.icon[title="Linkedin"] {
+    color: var(--color-linkedin);
+
+}
+
+.icon__list .icon:hover {
+    opacity: 0.5;
 }
