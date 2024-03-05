@@ -2,7 +2,7 @@
 @import url(./font.css);
 
 
-/*universel*/
+/*******************universel***********************/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -28,7 +28,7 @@ ul {
     font-family: "Raleway", sans-serif;
 }
 
-/*header / entete de page*/
+/************************header / entete de page*********************************/
 header {
     text-align: center;
     background-color: var(--color-header);
@@ -167,7 +167,7 @@ aside ul li p {
     padding: 0;
 }
 
-/*Footer / pied de page*/
+/********************************Footer / pied de page*******************************/
 
 footer {
     display: flex;
@@ -183,15 +183,18 @@ footer {
     list-style: none;
     display: flex;
     gap: 2rem;
-    font-size: 2rem;
+
 }
 
 .icon__list .icon {
     text-decoration: none;
-    color: #fff;
     transition: all ease-in 0.3s;
 }
 
+.icon__list .icon img {
+    background-color: var(--color-text-header);
+    border-radius: 7.5px;
+}
 
 .icon__list .icon:hover {
     opacity: 0.5;
