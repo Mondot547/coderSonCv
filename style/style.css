@@ -36,11 +36,13 @@ header {
 }
 
 .name>h1 {
-    margin: 2rem 0 2rem 0;
+    font-size: 1.5rem;
 }
 
 .name p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+    text-transform: uppercase;
 }
 
 .name .profil__img {
